@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AC74521D9877B800233274 /* ManufacturersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74511D9877B800233274 /* ManufacturersViewController.swift */; };
+		20AC74541D987A2800233274 /* ManufacturersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74531D987A2800233274 /* ManufacturersManager.swift */; };
+		20AC74561D987B6E00233274 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74551D987B6E00233274 /* Manufacturer.swift */; };
+		20B271291D85B0BF006E29E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271281D85B0BF006E29E9 /* AppDelegate.swift */; };
+		20B2712B1D85B0BF006E29E9 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */; };
+		20B2712E1D85B0BF006E29E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B2712C1D85B0BF006E29E9 /* Main.storyboard */; };
+		20B271311D85B0BF006E29E9 /* TCCRemote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20B2712F1D85B0BF006E29E9 /* TCCRemote.xcdatamodeld */; };
+		20B271331D85B0BF006E29E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B271321D85B0BF006E29E9 /* Assets.xcassets */; };
+		20B271361D85B0BF006E29E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B271341D85B0BF006E29E9 /* LaunchScreen.storyboard */; };
+		20B271411D85B0BF006E29E9 /* TCCRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271401D85B0BF006E29E9 /* TCCRemoteTests.swift */; };
+		20B2714C1D85B0BF006E29E9 /* TCCRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2714B1D85B0BF006E29E9 /* TCCRemoteUITests.swift */; };
+		20B2715B1D85CC89006E29E9 /* ControlButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2715A1D85CC89006E29E9 /* ControlButtonType.swift */; };
+		20B2715E1D85CED1006E29E9 /* RemoteControlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */; };
+		20B271611D85F614006E29E9 /* BluetoothCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271601D85F614006E29E9 /* BluetoothCommunication.swift */; };
+		20B271631D85F691006E29E9 /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271621D85F691006E29E9 /* NSData.swift */; };
+		20B271651D85FA38006E29E9 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271641D85FA38006E29E9 /* BluetoothViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20B2713D1D85B0BF006E29E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20B2711D1D85B0BE006E29E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20B271241D85B0BF006E29E9;
+			remoteInfo = TCCRemote;
+		};
+		20B271481D85B0BF006E29E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20B2711D1D85B0BE006E29E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20B271241D85B0BF006E29E9;
+			remoteInfo = TCCRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20AC74511D9877B800233274 /* ManufacturersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturersViewController.swift; sourceTree = "<group>"; };
+		20AC74531D987A2800233274 /* ManufacturersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturersManager.swift; sourceTree = "<group>"; };
+		20AC74551D987B6E00233274 /* Manufacturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		20B271251D85B0BF006E29E9 /* TCCRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B271281D85B0BF006E29E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
+		20B2712D1D85B0BF006E29E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20B271301D85B0BF006E29E9 /* TCCRemote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TCCRemote.xcdatamodel; sourceTree = "<group>"; };
+		20B271321D85B0BF006E29E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20B271351D85B0BF006E29E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20B271371D85B0BF006E29E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B2713C1D85B0BF006E29E9 /* TCCRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCCRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B271401D85B0BF006E29E9 /* TCCRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCRemoteTests.swift; sourceTree = "<group>"; };
+		20B271421D85B0BF006E29E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B271471D85B0BF006E29E9 /* TCCRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCCRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B2714B1D85B0BF006E29E9 /* TCCRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCRemoteUITests.swift; sourceTree = "<group>"; };
+		20B2714D1D85B0BF006E29E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B2715A1D85CC89006E29E9 /* ControlButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlButtonType.swift; sourceTree = "<group>"; };
+		20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControlError.swift; sourceTree = "<group>"; };
+		20B271601D85F614006E29E9 /* BluetoothCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCommunication.swift; sourceTree = "<group>"; };
+		20B271621D85F691006E29E9 /* NSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSData.swift; sourceTree = "<group>"; };
+		20B271641D85FA38006E29E9 /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20B271221D85B0BF006E29E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B271391D85B0BF006E29E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B271441D85B0BF006E29E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20B2711C1D85B0BE006E29E9 = {
+			isa = PBXGroup;
+			children = (
+				20B271271D85B0BF006E29E9 /* TCCRemote */,
+				20B2713F1D85B0BF006E29E9 /* TCCRemoteTests */,
+				20B2714A1D85B0BF006E29E9 /* TCCRemoteUITests */,
+				20B271261D85B0BF006E29E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20B271261D85B0BF006E29E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20B271251D85B0BF006E29E9 /* TCCRemote.app */,
+				20B2713C1D85B0BF006E29E9 /* TCCRemoteTests.xctest */,
+				20B271471D85B0BF006E29E9 /* TCCRemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20B271271D85B0BF006E29E9 /* TCCRemote */ = {
+			isa = PBXGroup;
+			children = (
+				20B2715F1D85F601006E29E9 /* Infrastructure */,
+				20B2715C1D85CE87006E29E9 /* Errors */,
+				20B271591D85CC4E006E29E9 /* Entities */,
+				20B271281D85B0BF006E29E9 /* AppDelegate.swift */,
+				20B271641D85FA38006E29E9 /* BluetoothViewController.swift */,
+				20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */,
+				20B2712C1D85B0BF006E29E9 /* Main.storyboard */,
+				20B271321D85B0BF006E29E9 /* Assets.xcassets */,
+				20B271341D85B0BF006E29E9 /* LaunchScreen.storyboard */,
+				20B271371D85B0BF006E29E9 /* Info.plist */,
+				20B2712F1D85B0BF006E29E9 /* TCCRemote.xcdatamodeld */,
+				20AC74511D9877B800233274 /* ManufacturersViewController.swift */,
+			);
+			path = TCCRemote;
+			sourceTree = "<group>";
+		};
+		20B2713F1D85B0BF006E29E9 /* TCCRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				20B271401D85B0BF006E29E9 /* TCCRemoteTests.swift */,
+				20B271421D85B0BF006E29E9 /* Info.plist */,
+			);
+			path = TCCRemoteTests;
+			sourceTree = "<group>";
+		};
+		20B2714A1D85B0BF006E29E9 /* TCCRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20B2714B1D85B0BF006E29E9 /* TCCRemoteUITests.swift */,
+				20B2714D1D85B0BF006E29E9 /* Info.plist */,
+			);
+			path = TCCRemoteUITests;
+			sourceTree = "<group>";
+		};
+		20B271591D85CC4E006E29E9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				20B2715A1D85CC89006E29E9 /* ControlButtonType.swift */,
+				20AC74551D987B6E00233274 /* Manufacturer.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		20B2715C1D85CE87006E29E9 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		20B2715F1D85F601006E29E9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				20B271601D85F614006E29E9 /* BluetoothCommunication.swift */,
+				20B271621D85F691006E29E9 /* NSData.swift */,
+				20AC74531D987A2800233274 /* ManufacturersManager.swift */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20B271241D85B0BF006E29E9 /* TCCRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B271501D85B0BF006E29E9 /* Build configuration list for PBXNativeTarget "TCCRemote" */;
+			buildPhases = (
+				20B271211D85B0BF006E29E9 /* Sources */,
+				20B271221D85B0BF006E29E9 /* Frameworks */,
+				20B271231D85B0BF006E29E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCCRemote;
+			productName = TCCRemote;
+			productReference = 20B271251D85B0BF006E29E9 /* TCCRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20B2713B1D85B0BF006E29E9 /* TCCRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B271531D85B0BF006E29E9 /* Build configuration list for PBXNativeTarget "TCCRemoteTests" */;
+			buildPhases = (
+				20B271381D85B0BF006E29E9 /* Sources */,
+				20B271391D85B0BF006E29E9 /* Frameworks */,
+				20B2713A1D85B0BF006E29E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20B2713E1D85B0BF006E29E9 /* PBXTargetDependency */,
+			);
+			name = TCCRemoteTests;
+			productName = TCCRemoteTests;
+			productReference = 20B2713C1D85B0BF006E29E9 /* TCCRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20B271461D85B0BF006E29E9 /* TCCRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20B271561D85B0BF006E29E9 /* Build configuration list for PBXNativeTarget "TCCRemoteUITests" */;
+			buildPhases = (
+				20B271431D85B0BF006E29E9 /* Sources */,
+				20B271441D85B0BF006E29E9 /* Frameworks */,
+				20B271451D85B0BF006E29E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20B271491D85B0BF006E29E9 /* PBXTargetDependency */,
+			);
+			name = TCCRemoteUITests;
+			productName = TCCRemoteUITests;
+			productReference = 20B271471D85B0BF006E29E9 /* TCCRemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20B2711D1D85B0BE006E29E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Felipe Lopes";
+				TargetAttributes = {
+					20B271241D85B0BF006E29E9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FYUEW6EB5V;
+						LastSwiftMigration = 0800;
+					};
+					20B2713B1D85B0BF006E29E9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 20B271241D85B0BF006E29E9;
+					};
+					20B271461D85B0BF006E29E9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 20B271241D85B0BF006E29E9;
+					};
+				};
+			};
+			buildConfigurationList = 20B271201D85B0BF006E29E9 /* Build configuration list for PBXProject "TCCRemote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20B2711C1D85B0BE006E29E9;
+			productRefGroup = 20B271261D85B0BF006E29E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20B271241D85B0BF006E29E9 /* TCCRemote */,
+				20B2713B1D85B0BF006E29E9 /* TCCRemoteTests */,
+				20B271461D85B0BF006E29E9 /* TCCRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20B271231D85B0BF006E29E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B271361D85B0BF006E29E9 /* LaunchScreen.storyboard in Resources */,
+				20B271331D85B0BF006E29E9 /* Assets.xcassets in Resources */,
+				20B2712E1D85B0BF006E29E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B2713A1D85B0BF006E29E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B271451D85B0BF006E29E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20B271211D85B0BF006E29E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B271611D85F614006E29E9 /* BluetoothCommunication.swift in Sources */,
+				20AC74521D9877B800233274 /* ManufacturersViewController.swift in Sources */,
+				20B2712B1D85B0BF006E29E9 /* RemoteViewController.swift in Sources */,
+				20B2715E1D85CED1006E29E9 /* RemoteControlError.swift in Sources */,
+				20B2715B1D85CC89006E29E9 /* ControlButtonType.swift in Sources */,
+				20B271291D85B0BF006E29E9 /* AppDelegate.swift in Sources */,
+				20B271651D85FA38006E29E9 /* BluetoothViewController.swift in Sources */,
+				20B271631D85F691006E29E9 /* NSData.swift in Sources */,
+				20AC74541D987A2800233274 /* ManufacturersManager.swift in Sources */,
+				20AC74561D987B6E00233274 /* Manufacturer.swift in Sources */,
+				20B271311D85B0BF006E29E9 /* TCCRemote.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B271381D85B0BF006E29E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B271411D85B0BF006E29E9 /* TCCRemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B271431D85B0BF006E29E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20B2714C1D85B0BF006E29E9 /* TCCRemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20B2713E1D85B0BF006E29E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20B271241D85B0BF006E29E9 /* TCCRemote */;
+			targetProxy = 20B2713D1D85B0BF006E29E9 /* PBXContainerItemProxy */;
+		};
+		20B271491D85B0BF006E29E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20B271241D85B0BF006E29E9 /* TCCRemote */;
+			targetProxy = 20B271481D85B0BF006E29E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20B2712C1D85B0BF006E29E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20B2712D1D85B0BF006E29E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20B271341D85B0BF006E29E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20B271351D85B0BF006E29E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20B2714E1D85B0BF006E29E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20B2714F1D85B0BF006E29E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20B271511D85B0BF006E29E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TCCRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FelipeCaio.TCCRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20B271521D85B0BF006E29E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TCCRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FelipeCaio.TCCRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		20B271541D85B0BF006E29E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TCCRemoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FelipeCaio.TCCRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCCRemote.app/TCCRemote";
+			};
+			name = Debug;
+		};
+		20B271551D85B0BF006E29E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TCCRemoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FelipeCaio.TCCRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCCRemote.app/TCCRemote";
+			};
+			name = Release;
+		};
+		20B271571D85B0BF006E29E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TCCRemoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FelipeCaio.TCCRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TCCRemote;
+			};
+			name = Debug;
+		};
+		20B271581D85B0BF006E29E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TCCRemoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FelipeCaio.TCCRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TCCRemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20B271201D85B0BF006E29E9 /* Build configuration list for PBXProject "TCCRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B2714E1D85B0BF006E29E9 /* Debug */,
+				20B2714F1D85B0BF006E29E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B271501D85B0BF006E29E9 /* Build configuration list for PBXNativeTarget "TCCRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B271511D85B0BF006E29E9 /* Debug */,
+				20B271521D85B0BF006E29E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B271531D85B0BF006E29E9 /* Build configuration list for PBXNativeTarget "TCCRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B271541D85B0BF006E29E9 /* Debug */,
+				20B271551D85B0BF006E29E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20B271561D85B0BF006E29E9 /* Build configuration list for PBXNativeTarget "TCCRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B271571D85B0BF006E29E9 /* Debug */,
+				20B271581D85B0BF006E29E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20B2712F1D85B0BF006E29E9 /* TCCRemote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20B271301D85B0BF006E29E9 /* TCCRemote.xcdatamodel */,
+			);
+			currentVersion = 20B271301D85B0BF006E29E9 /* TCCRemote.xcdatamodel */;
+			path = TCCRemote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20B2711D1D85B0BE006E29E9 /* Project object */;
+}
