@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200E837B1DC51F6C00F72CFF /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E837A1DC51F6C00F72CFF /* Device.swift */; };
+		200E837E1DC5239F00F72CFF /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E837D1DC5239F00F72CFF /* DevicesViewController.swift */; };
+		200E83801DC534F600F72CFF /* DeviceCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E837F1DC534F600F72CFF /* DeviceCommand.swift */; };
+		2043C9EF1DC4EE460092E250 /* DeviceCategorysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043C9EE1DC4EE460092E250 /* DeviceCategorysViewController.swift */; };
+		2043C9F11DC4EF4C0092E250 /* DeviceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043C9F01DC4EF4C0092E250 /* DeviceCategory.swift */; };
 		20AC74521D9877B800233274 /* ManufacturersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74511D9877B800233274 /* ManufacturersViewController.swift */; };
-		20AC74541D987A2800233274 /* ManufacturersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74531D987A2800233274 /* ManufacturersManager.swift */; };
+		20AC74541D987A2800233274 /* DeviceCategoriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74531D987A2800233274 /* DeviceCategoriesManager.swift */; };
 		20AC74561D987B6E00233274 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AC74551D987B6E00233274 /* Manufacturer.swift */; };
 		20B271291D85B0BF006E29E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271281D85B0BF006E29E9 /* AppDelegate.swift */; };
 		20B2712B1D85B0BF006E29E9 /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */; };
@@ -21,7 +26,6 @@
 		20B2715B1D85CC89006E29E9 /* ControlButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2715A1D85CC89006E29E9 /* ControlButtonType.swift */; };
 		20B2715E1D85CED1006E29E9 /* RemoteControlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */; };
 		20B271611D85F614006E29E9 /* BluetoothCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271601D85F614006E29E9 /* BluetoothCommunication.swift */; };
-		20B271631D85F691006E29E9 /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271621D85F691006E29E9 /* NSData.swift */; };
 		20B271651D85FA38006E29E9 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271641D85FA38006E29E9 /* BluetoothViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20AC74511D9877B800233274 /* ManufacturersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturersViewController.swift; sourceTree = "<group>"; };
-		20AC74531D987A2800233274 /* ManufacturersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManufacturersManager.swift; sourceTree = "<group>"; };
+		200E837A1DC51F6C00F72CFF /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		200E837D1DC5239F00F72CFF /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		200E837F1DC534F600F72CFF /* DeviceCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCommand.swift; sourceTree = "<group>"; };
+		2043C9EE1DC4EE460092E250 /* DeviceCategorysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeviceCategorysViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2043C9F01DC4EF4C0092E250 /* DeviceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeviceCategory.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20AC74511D9877B800233274 /* ManufacturersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ManufacturersViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20AC74531D987A2800233274 /* DeviceCategoriesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeviceCategoriesManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		20AC74551D987B6E00233274 /* Manufacturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
 		20B271251D85B0BF006E29E9 /* TCCRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCCRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B271281D85B0BF006E29E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +72,7 @@
 		20B2715A1D85CC89006E29E9 /* ControlButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlButtonType.swift; sourceTree = "<group>"; };
 		20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControlError.swift; sourceTree = "<group>"; };
 		20B271601D85F614006E29E9 /* BluetoothCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCommunication.swift; sourceTree = "<group>"; };
-		20B271621D85F691006E29E9 /* NSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSData.swift; sourceTree = "<group>"; };
-		20B271641D85FA38006E29E9 /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		20B271641D85FA38006E29E9 /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BluetoothViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200E837C1DC522AE00F72CFF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				20B271641D85FA38006E29E9 /* BluetoothViewController.swift */,
+				2043C9EE1DC4EE460092E250 /* DeviceCategorysViewController.swift */,
+				200E837D1DC5239F00F72CFF /* DevicesViewController.swift */,
+				20AC74511D9877B800233274 /* ManufacturersViewController.swift */,
+				20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		20B2711C1D85B0BE006E29E9 = {
 			isa = PBXGroup;
 			children = (
@@ -115,18 +135,16 @@
 		20B271271D85B0BF006E29E9 /* TCCRemote */ = {
 			isa = PBXGroup;
 			children = (
-				20B2715F1D85F601006E29E9 /* Infrastructure */,
 				20B2715C1D85CE87006E29E9 /* Errors */,
+				20B2715F1D85F601006E29E9 /* Infrastructure */,
 				20B271591D85CC4E006E29E9 /* Entities */,
+				200E837C1DC522AE00F72CFF /* ViewControllers */,
 				20B271281D85B0BF006E29E9 /* AppDelegate.swift */,
-				20B271641D85FA38006E29E9 /* BluetoothViewController.swift */,
-				20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */,
 				20B2712C1D85B0BF006E29E9 /* Main.storyboard */,
 				20B271321D85B0BF006E29E9 /* Assets.xcassets */,
 				20B271341D85B0BF006E29E9 /* LaunchScreen.storyboard */,
 				20B271371D85B0BF006E29E9 /* Info.plist */,
 				20B2712F1D85B0BF006E29E9 /* TCCRemote.xcdatamodeld */,
-				20AC74511D9877B800233274 /* ManufacturersViewController.swift */,
 			);
 			path = TCCRemote;
 			sourceTree = "<group>";
@@ -153,6 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				20B2715A1D85CC89006E29E9 /* ControlButtonType.swift */,
+				200E837A1DC51F6C00F72CFF /* Device.swift */,
+				200E837F1DC534F600F72CFF /* DeviceCommand.swift */,
+				2043C9F01DC4EF4C0092E250 /* DeviceCategory.swift */,
 				20AC74551D987B6E00233274 /* Manufacturer.swift */,
 			);
 			name = Entities;
@@ -170,8 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				20B271601D85F614006E29E9 /* BluetoothCommunication.swift */,
-				20B271621D85F691006E29E9 /* NSData.swift */,
-				20AC74531D987A2800233274 /* ManufacturersManager.swift */,
+				20AC74531D987A2800233274 /* DeviceCategoriesManager.swift */,
 			);
 			name = Infrastructure;
 			sourceTree = "<group>";
@@ -311,15 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2043C9F11DC4EF4C0092E250 /* DeviceCategory.swift in Sources */,
 				20B271611D85F614006E29E9 /* BluetoothCommunication.swift in Sources */,
 				20AC74521D9877B800233274 /* ManufacturersViewController.swift in Sources */,
 				20B2712B1D85B0BF006E29E9 /* RemoteViewController.swift in Sources */,
 				20B2715E1D85CED1006E29E9 /* RemoteControlError.swift in Sources */,
+				200E837B1DC51F6C00F72CFF /* Device.swift in Sources */,
+				200E83801DC534F600F72CFF /* DeviceCommand.swift in Sources */,
+				2043C9EF1DC4EE460092E250 /* DeviceCategorysViewController.swift in Sources */,
 				20B2715B1D85CC89006E29E9 /* ControlButtonType.swift in Sources */,
+				200E837E1DC5239F00F72CFF /* DevicesViewController.swift in Sources */,
 				20B271291D85B0BF006E29E9 /* AppDelegate.swift in Sources */,
 				20B271651D85FA38006E29E9 /* BluetoothViewController.swift in Sources */,
-				20B271631D85F691006E29E9 /* NSData.swift in Sources */,
-				20AC74541D987A2800233274 /* ManufacturersManager.swift in Sources */,
+				20AC74541D987A2800233274 /* DeviceCategoriesManager.swift in Sources */,
 				20AC74561D987B6E00233274 /* Manufacturer.swift in Sources */,
 				20B271311D85B0BF006E29E9 /* TCCRemote.xcdatamodeld in Sources */,
 			);

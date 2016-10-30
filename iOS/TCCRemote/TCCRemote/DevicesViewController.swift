@@ -1,45 +1,45 @@
 //
-//  ManufacturersViewController.swift
+//  DevicesViewController.swift
 //  TCCRemote
 //
-//  Created by Felipe Lopes on 9/25/16.
+//  Created by Felipe Lopes on 10/29/16.
 //  Copyright © 2016 Felipe Lopes. All rights reserved.
 //
 
 import UIKit
 
-class ManufacturersViewController
-    : UITableViewController
-{
+class DevicesViewController
+    : UITableViewController {
+    
     var bluetoothCommunication: BluetoothCommunication!
-    var selectedDeviceCategory: DeviceCategory!
     var selectedManufacturer: Manufacturer!
+    var selectedDevice: Device!
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.selectedDeviceCategory.manufacturers.count
+        return self.selectedManufacturer.devices.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
-        let manufacturer = self.selectedDeviceCategory.manufacturers[indexPath.row]
+        let device = self.selectedManufacturer.devices[indexPath.row]
         
         let cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-        cell.textLabel?.text = manufacturer.name
+        cell.textLabel?.text = device.name
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedManufacturer = self.selectedDeviceCategory.manufacturers[indexPath.row]
-
-        performSegue(withIdentifier: "SelectedManufacturer", sender: self)
+        self.selectedDevice = self.selectedManufacturer.devices[indexPath.row]
+        
+        performSegue(withIdentifier: "SelectedDevice", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "SelectedManufacturer") {
-            let remoteViewController = segue.destination as! DevicesViewController
-        
+        if (segue.identifier == "SelectedDevice") {
+            let remoteViewController = segue.destination as! RemoteViewController
+            
             remoteViewController.bluetoothCommunication = self.bluetoothCommunication
-            remoteViewController.selectedManufacturer = self.selectedManufacturer
+            remoteViewController.selectedDevice = self.selectedDevice
         }
     }
 }

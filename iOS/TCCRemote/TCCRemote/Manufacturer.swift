@@ -8,14 +8,16 @@
 
 import Foundation
 
-class Manufacturer: NSObject {
-    init(name: String, code: Int) {
+class Manufacturer {
+    init(name: String, code: UInt8, devices: [Device]) {
         self.name = name
         self.code = code
-        
-        super.init()
+        self.devices = devices
     }
     
     var name: String
-    var code: Int
+    var code: UInt8
+    var devices: [Device]
+    
+    var category: DeviceCategory?
 }

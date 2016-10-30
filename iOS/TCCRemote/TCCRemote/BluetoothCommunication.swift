@@ -24,12 +24,12 @@ class BluetoothCommunication: NSObject {
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
     
-    func writeValue(value: Int8) {
+    func writeValue(value: [UInt8]) {
         guard let peripheral = connectedPeripheral, let characteristic = writableCharacteristic else {
             return
         }
         
-        let data = Data.dataWithValue(value: value)
+        let data = Data(bytes: value)
         peripheral.writeValue(data, for: characteristic, type: .withoutResponse)
     }
     
@@ -112,6 +112,6 @@ extension BluetoothCommunication: CBPeripheralDelegate {
             return
         }
         
-        delegate.bluetoothCommunication(bluetoothCommunication: self, didReceiveValue: data.int8Value())
+        // delegate.bluetoothCommunication(bluetoothCommunication: self, didReceiveValue: data.int8Value())
     }
 }

@@ -22,14 +22,14 @@ class BluetoothViewController: UIViewController {
         self.bluetoothCommunication = BluetoothCommunication(serviceUUID: "A163B9B9-0B57-0993-82CA-3C621BBA467E", delegate: self)
         
         // TODO: EXCLUIR
-        bluetoothCommunicationDidConnect(bluetoothCommunication: self.bluetoothCommunication)
+        //bluetoothCommunicationDidConnect(bluetoothCommunication: self.bluetoothCommunication)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "BluetoothConnected" {
-            let manufacturersViewController = segue.destination as! ManufacturersViewController
+            let deviceCategoriesViewController = segue.destination as! DeviceCategoriesViewController
             
-            manufacturersViewController.bluetoothCommunication = self.bluetoothCommunication
+            deviceCategoriesViewController.bluetoothCommunication = self.bluetoothCommunication
         }
     }
 }
