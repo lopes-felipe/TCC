@@ -57,7 +57,10 @@ class RemoteViewController: UIViewController {
     func registerNewCommand(action: UIAlertAction) {
         newCommand = DeviceCommand(controlLayoutTag: lastButtonTag!)
         
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         let alert = UIAlertController(title: "Aguardando", message: "Aguardando recebimento do comando...", preferredStyle: .alert)
+        alert.addAction(cancelAction)
+        
         present(alert, animated: true, completion: nil)
         
         bluetoothCommunication.receiveValue(delegate: self)

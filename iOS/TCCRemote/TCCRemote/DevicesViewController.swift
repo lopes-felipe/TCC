@@ -19,6 +19,12 @@ class DevicesViewController
         return self.selectedManufacturer.devices.count
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
         let device = self.selectedManufacturer.devices[indexPath.row]
         
@@ -40,6 +46,11 @@ class DevicesViewController
             
             remoteViewController.bluetoothCommunication = self.bluetoothCommunication
             remoteViewController.selectedDevice = self.selectedDevice
+        }
+        else if segue.identifier == "NewItem" {
+            let newDeviceViewController = segue.destination as! NewDeviceViewController
+            
+            newDeviceViewController.currentManufacturer = self.selectedManufacturer
         }
     }
 }

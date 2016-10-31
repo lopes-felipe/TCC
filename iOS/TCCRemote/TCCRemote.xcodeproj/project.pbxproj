@@ -30,6 +30,7 @@
 		20B2715E1D85CED1006E29E9 /* RemoteControlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */; };
 		20B271611D85F614006E29E9 /* BluetoothCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271601D85F614006E29E9 /* BluetoothCommunication.swift */; };
 		20B271651D85FA38006E29E9 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B271641D85FA38006E29E9 /* BluetoothViewController.swift */; };
+		20F50BEF1DC800F6006617B8 /* NewDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F50BEE1DC800F6006617B8 /* NewDeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		20B2715D1D85CED1006E29E9 /* RemoteControlError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControlError.swift; sourceTree = "<group>"; };
 		20B271601D85F614006E29E9 /* BluetoothCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCommunication.swift; sourceTree = "<group>"; };
 		20B271641D85FA38006E29E9 /* BluetoothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BluetoothViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20F50BEE1DC800F6006617B8 /* NewDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				2043C9EE1DC4EE460092E250 /* DeviceCategorysViewController.swift */,
 				20AC74511D9877B800233274 /* ManufacturersViewController.swift */,
 				202091A81DC6709400D38E17 /* NewCategoryViewController.swift */,
+				20F50BEE1DC800F6006617B8 /* NewDeviceViewController.swift */,
 				202091AA1DC6836400D38E17 /* NewManufacturerViewController.swift */,
 				20B2712A1D85B0BF006E29E9 /* RemoteViewController.swift */,
 			);
@@ -353,6 +356,7 @@
 				20B2715B1D85CC89006E29E9 /* ControlButtonType.swift in Sources */,
 				200E837E1DC5239F00F72CFF /* DevicesViewController.swift in Sources */,
 				20B271291D85B0BF006E29E9 /* AppDelegate.swift in Sources */,
+				20F50BEF1DC800F6006617B8 /* NewDeviceViewController.swift in Sources */,
 				20B271651D85FA38006E29E9 /* BluetoothViewController.swift in Sources */,
 				20AC74541D987A2800233274 /* DeviceCategoriesManager.swift in Sources */,
 				20AC74561D987B6E00233274 /* Manufacturer.swift in Sources */,

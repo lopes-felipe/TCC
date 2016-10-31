@@ -9,6 +9,11 @@
 import Foundation
 
 class Device {
+    init(name: String) {
+        self.name = name
+        self.commands = []
+    }
+    
     init(name: String, commands: [DeviceCommand]) {
         self.name = name;
         self.commands = commands;

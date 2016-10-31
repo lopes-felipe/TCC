@@ -80,7 +80,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Dispositivos" id="yMm-V3-uGc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="el3-LK-JvS"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="el3-LK-JvS">
+                            <connections>
+                                <segue destination="qEH-Z1-oVo" kind="presentation" identifier="NewItem" id="hdv-Sv-KL8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="SelectedDevice" id="u5M-8S-Kv3"/>
@@ -519,14 +523,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRv-RW-CUU">
-                                <frame key="frameInset" minX="16" minY="91" width="343" height="21"/>
+                                <frame key="frameInset" minX="16" minY="86" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZvL-qE-WHG">
-                                <frame key="frameInset" minX="16" minY="120" width="343" height="30"/>
+                                <frame key="frameInset" minX="16" minY="115" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -639,6 +643,70 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1484" y="1198"/>
+        </scene>
+        <!--New Device View Controller-->
+        <scene sceneID="1fn-CV-fJl">
+            <objects>
+                <viewController id="qEH-Z1-oVo" customClass="NewDeviceViewController" customModule="TCCRemote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mvl-tu-GXO"/>
+                        <viewControllerLayoutGuide type="bottom" id="WJr-Cl-7sH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Bp-Ni-ygc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08G-vX-dm5">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cadastro" id="TDx-zz-xwm">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="aOx-Sb-sId">
+                                            <connections>
+                                                <action selector="cancelTapped:" destination="qEH-Z1-oVo" id="vdz-gp-v1e"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="0GZ-vo-ihh">
+                                            <connections>
+                                                <action selector="saveTapped:" destination="qEH-Z1-oVo" id="RfG-3Z-2SB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-tZ-Jmy">
+                                <frame key="frameInset" minX="16" minY="115" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dispositivo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-4T-Mzw">
+                                <frame key="frameInset" minX="16" minY="86" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WCO-pj-tN7" appends="YES" id="FES-eE-0C9"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="deviceField" destination="d5A-tZ-Jmy" id="91q-g9-6I8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0c-GE-ENX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WCO-pj-tN7">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="qEH-Z1-oVo" id="UG7-4m-Lja"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2348" y="1198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cL0-kd-HEV">
