@@ -21,8 +21,8 @@ class BluetoothViewController: UIViewController {
         
         self.bluetoothCommunication = BluetoothCommunication(serviceUUID: "A163B9B9-0B57-0993-82CA-3C621BBA467E", delegate: self)
         
-        // TODO: EXCLUIR
-        //bluetoothCommunicationDidConnect(bluetoothCommunication: self.bluetoothCommunication)
+        // DESCOMENTAR PARA SIMULADOR
+        bluetoothCommunication(didConnect: self.bluetoothCommunication)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,12 +34,8 @@ class BluetoothViewController: UIViewController {
     }
 }
 
-extension BluetoothViewController: BluetoothCommunicationDelegate{
-    func bluetoothCommunication(bluetoothCommunication: BluetoothCommunication, didReceiveValue value: Int8){
-        //TODO: Tratar valor recebido
-    }
-    
-    func bluetoothCommunicationDidConnect(bluetoothCommunication: BluetoothCommunication) {
+extension BluetoothViewController: BluetoothConnectionDelegate{    
+    func bluetoothCommunication(didConnect bluetoothCommunication: BluetoothCommunication) {
         statusLabel.text = "      Conexão efetuada com sucesso"
         statusLabel.sizeToFit()
         statusActivity.stopAnimating()

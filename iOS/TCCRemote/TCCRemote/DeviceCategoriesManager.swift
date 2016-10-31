@@ -14,13 +14,10 @@ class DeviceCategoriesManager {
     init() {
         self.deviceCategories = [DeviceCategory]()
         
-        let testCommand = DeviceCommand(data: [0xE0, 0xE0, 0x40, 0xBF], numberOfBits: 32)
+        let testCommand = DeviceCommand(data: [0xE0, 0xE0, 0x40, 0xBF], manufacturerCode: 7, numberOfBits: 32, controlLayoutTag: 1)
         let testDevice = Device(name: "UN48000 (Sala)", commands: [testCommand])
-        let testManufacturer = Manufacturer(name: "Samsung", code: 7, devices: [testDevice])
+        let testManufacturer = Manufacturer(name: "Samsung", devices: [testDevice])
         let newDeviceCategory = add(deviceCategory: "TV")
-        
-        testManufacturer.category = newDeviceCategory
-        testDevice.manufacturer = testManufacturer
         
         newDeviceCategory.manufacturers.append(testManufacturer)
     }

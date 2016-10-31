@@ -14,9 +14,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            endingLineNumber = "23">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495323688.077667"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "init(serviceUUID:delegate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495335611.591234"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "centralManager(_:didDiscover:advertisementData:rssi:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495335611.591234"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "centralManager(_:didConnect:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495328645.290297"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "peripheral(_:didDiscoverServices:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,75 +88,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495328645.290297"
+            timestampString = "499541136.148398"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "peripheral(_:didDiscoverCharacteristicsFor:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TCCRemote/BluetoothCommunication.swift"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "peripheral(_:didDiscoverCharacteristicsFor:error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495334982.417452"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "peripheral(_:didWriteValueFor:error:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TCCRemote.BluetoothCommunication.peripheral (__ObjC.CBPeripheral, didWriteValueFor : __ObjC.CBCharacteristic, error : Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "TCCRemote"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/felipelopes/Documents/TCC/iOSApp/TCCRemote/TCCRemote/BluetoothCommunication.swift"
-                  timestampString = "496551534.296993"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TCCRemote.BluetoothCommunication.peripheral (__ObjC.CBPeripheral, didWriteValueFor : __ObjC.CBCharacteristic, error : Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
-                  moduleName = "TCCRemote"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/felipelopes/Documents/TCC/iOSApp/TCCRemote/TCCRemote/BluetoothCommunication.swift"
-                  timestampString = "496551534.301776"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "111"
-                  endingLineNumber = "111"
-                  offsetFromSymbolStart = "152">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495329227.634417"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
             landmarkName = "peripheral(_:didDiscoverServices:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,28 +120,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495329389.011816"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "peripheral(_:didDiscoverCharacteristicsFor:error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495334982.417452"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "peripheral(_:didWriteValueFor:error:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -206,9 +140,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            endingLineNumber = "32">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -218,11 +150,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/BluetoothCommunication.swift"
-            timestampString = "495334768.754665"
+            timestampString = "499541136.148398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "writeValue(value:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TCCRemote/ManufacturersViewController.swift"
-            timestampString = "499446932.407081"
+            timestampString = "499550392.656258"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -265,29 +197,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TCCRemote/RemoteViewController.swift"
-            timestampString = "499463939.345735"
+            filePath = "TCCRemote/ManufacturersViewController.swift"
+            timestampString = "499550379.016124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "buttonPressed(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TCCRemote/RemoteViewController.swift"
-            timestampString = "499463939.345735"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "buttonPressed(sender:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

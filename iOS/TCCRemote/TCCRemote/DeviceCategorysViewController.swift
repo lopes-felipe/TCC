@@ -11,10 +11,23 @@ import UIKit
 class DeviceCategoriesViewController
     : UITableViewController
 {
-    let deviceCategoriesManager = DeviceCategoriesManager()
-    
+    var deviceCategoriesManager: DeviceCategoriesManager!
     var bluetoothCommunication: BluetoothCommunication!
+    
     var selectedDeviceCategory: DeviceCategory?
+    
+    required init(coder: NSCoder) {
+        super.init(coder: coder)!
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        self.deviceCategoriesManager = appDelegate.deviceCategoriesManager
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.deviceCategoriesManager.deviceCategories.count

@@ -19,6 +19,12 @@ class ManufacturersViewController
         return self.selectedDeviceCategory.manufacturers.count
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
         let manufacturer = self.selectedDeviceCategory.manufacturers[indexPath.row]
         
@@ -35,11 +41,16 @@ class ManufacturersViewController
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "SelectedManufacturer") {
+        if segue.identifier == "SelectedManufacturer" {
             let remoteViewController = segue.destination as! DevicesViewController
         
             remoteViewController.bluetoothCommunication = self.bluetoothCommunication
             remoteViewController.selectedManufacturer = self.selectedManufacturer
+        }
+        else if segue.identifier == "NewItem" {
+            let newManufacturerViewController = segue.destination as! NewManufacturerViewController
+            
+            newManufacturerViewController.currentCategory = self.selectedDeviceCategory
         }
     }
 }

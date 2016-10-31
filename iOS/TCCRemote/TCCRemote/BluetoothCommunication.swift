@@ -1,23 +1,28 @@
 import CoreBluetooth
 
-protocol BluetoothCommunicationDelegate: class {
-    func bluetoothCommunication(bluetoothCommunication: BluetoothCommunication, didReceiveValue value: Int8)
-    
-    func bluetoothCommunicationDidConnect(bluetoothCommunication: BluetoothCommunication)
+protocol BluetoothConnectionDelegate: class {
+    func bluetoothCommunication(didConnect bluetoothCommunication: BluetoothCommunication)
+}
+
+protocol BluetoothReceiverDelegate: class {
+    func bluetoothCommunication(bluetoothCommunication: BluetoothCommunication, didReceiveValue value: UInt8)
 }
 
 class BluetoothCommunication: NSObject {
     let serviceUUID: String
-    weak var delegate: BluetoothCommunicationDelegate?
+    weak var connectionDelegate: BluetoothConnectionDelegate?
+    weak var receiverDelegate: BluetoothReceiverDelegate?
     
     var centralManager: CBCentralManager!
     var connectedPeripheral: CBPeripheral?
     var targetService: CBService?
-    var writableCharacteristic: CBCharacteristic?
     
-    init(serviceUUID: String, delegate: BluetoothCommunicationDelegate?) {
+    var writableCharacteristic: CBCharacteristic?
+    var readableCharacteristic: CBCharacteristic?
+    
+    init(serviceUUID: String, delegate: BluetoothConnectionDelegate?) {
         self.serviceUUID = serviceUUID
-        self.delegate = delegate
+        self.connectionDelegate = delegate
         
         super.init()
         
@@ -99,19 +104,33 @@ extension BluetoothCommunication: CBPeripheralDelegate {
                 writableCharacteristic = characteristic
                 
                 debugPrint("centralManager::didDiscoverCharacteristicsForService")
-                delegate?.bluetoothCommunicationDidConnect(bluetoothCommunication: self)
+                connectionDelegate?.bluetoothCommunication(didConnect: self)
                 
             }
             
-            //peripheral.setNotifyValue(true, forCharacteristic: characteristic)
+            if characteristic.properties.contains(.notify){
+                readableCharacteristic = characteristic
+            }
         }
     }
     
-    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
-        guard let data = characteristic.value, let delegate = delegate else {
+    func receiveValue(delegate: BluetoothReceiverDelegate) {
+        guard let peripheral = connectedPeripheral, let characteristic = readableCharacteristic else {
             return
         }
         
-        // delegate.bluetoothCommunication(bluetoothCommunication: self, didReceiveValue: data.int8Value())
+        self.receiverDelegate = delegate
+        peripheral.setNotifyValue(true, for: characteristic)
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+        guard let data = characteristic.value, let delegate = receiverDelegate else {
+            return
+        }
+        
+        debugPrint("BluetoothCommunication::didUpdateValue: ")
+        debugPrint(data.toUInt8())
+        
+        delegate.bluetoothCommunication(bluetoothCommunication: self, didReceiveValue: data.toUInt8())
     }
 }

@@ -9,15 +9,16 @@
 import Foundation
 
 class Manufacturer {
-    init(name: String, code: UInt8, devices: [Device]) {
+    init(name: String) {
         self.name = name
-        self.code = code
+        self.devices = []
+    }
+    
+    init(name: String, devices: [Device]) {
+        self.name = name
         self.devices = devices
     }
     
     var name: String
-    var code: UInt8
     var devices: [Device]
-    
-    var category: DeviceCategory?
 }

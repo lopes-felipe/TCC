@@ -13,9 +13,12 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var deviceCategoriesManager: DeviceCategoriesManager!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool  {
         // Override point for customization after application launch.
+        deviceCategoriesManager = DeviceCategoriesManager()
+        
         return true
     }
     

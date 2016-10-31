@@ -17,5 +17,13 @@ class Device {
     var name: String
     var commands: [DeviceCommand]
     
-    var manufacturer : Manufacturer?
+    func findCommandBy(layoutTag tag: Int) -> DeviceCommand? {
+        for command in commands {
+            if command.controlLayoutTag == tag {
+                return command
+            }
+        }
+        
+        return nil
+    }
 }
