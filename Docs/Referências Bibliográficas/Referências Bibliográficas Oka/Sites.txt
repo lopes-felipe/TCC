@@ -1,0 +1,16 @@
+tabela - http://www.las.inpe.br/~cesar/Infrared/espectro.htm
+
+imagem - http://www.dexterindustries.com/shop/arduberry-raspberry-pi-arduino-shields/
+
+imagem - https://donjajo.com/bluetooth-fix-a2dp-source-profile-connect-failed-xx-protocol-not-available-linux/#.WBWH5PkrLIU
+
+imagem - http://www.twalves.com/e-fundamental/9-ano/modos-de-transmissao-de-dados
+
+imagem - http://ktechnics.com/shop/atmega328p-pu/
+
+imagem - http://www.dreaminc.com.br/sala_de_aula/infravermelho/
+
+http://www.repositorio.uniceub.br/bitstream/123456789/3120/2/20126521.pdf
+
+Jennifer Bray and Charles Sturman. Bluetoot Connect Without Cables. PrenticeHall,
+1 edição, 1999.
