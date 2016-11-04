@@ -15,6 +15,10 @@ class NewDeviceViewController
     
     @IBOutlet weak var deviceField: UITextField!
     
+    override func viewDidLoad() {
+        deviceField.becomeFirstResponder()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -25,6 +29,7 @@ class NewDeviceViewController
     }
     
     @IBAction func cancelTapped(_ sender: AnyObject) {
+        deviceField.resignFirstResponder()
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     

@@ -13,6 +13,10 @@ class NewCategoryViewController
     
     @IBOutlet weak var categoryField: UITextField!
     
+    override func viewDidLoad() {
+        categoryField.becomeFirstResponder()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -23,6 +27,7 @@ class NewCategoryViewController
     }
     
     @IBAction func cancelTapped(_ sender: AnyObject) {
+        categoryField.resignFirstResponder()
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     

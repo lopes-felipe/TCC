@@ -15,6 +15,10 @@ class NewManufacturerViewController
     
     @IBOutlet weak var manufacturerField: UITextField!
     
+    override func viewDidLoad() {
+        manufacturerField.becomeFirstResponder()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -25,6 +29,7 @@ class NewManufacturerViewController
     }
     
     @IBAction func cancelTapped(_ sender: AnyObject) {
+        manufacturerField.resignFirstResponder()
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     

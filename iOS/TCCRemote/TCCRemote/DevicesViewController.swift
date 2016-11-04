@@ -40,6 +40,14 @@ class DevicesViewController
         performSegue(withIdentifier: "SelectedDevice", sender: self)
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.selectedManufacturer.devices.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SelectedDevice") {
             let remoteViewController = segue.destination as! RemoteViewController

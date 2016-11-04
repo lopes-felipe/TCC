@@ -48,6 +48,13 @@ class DeviceCategoriesViewController
         performSegue(withIdentifier: "SelectedDeviceCategory", sender: self)
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.deviceCategoriesManager.deviceCategories.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SelectedDeviceCategory") {
             let manufacturersViewController = segue.destination as! ManufacturersViewController

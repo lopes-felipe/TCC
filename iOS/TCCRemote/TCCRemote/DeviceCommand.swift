@@ -23,9 +23,20 @@ class DeviceCommand: NSObject, NSCoding {
     }
     
     required init(coder aDecoder: NSCoder) {
-        self.data = aDecoder.decodeBytes(withReturnedLength: self.data)(forKey: "data") as! [UInt8]
-        self.manufacturerCode = aDecoder.decodeObject(forKey: "manufacturerCode") as! UInt8
-        self.numberOfBits = aDecoder.decodeObject(forKey: "numberOfBits") as! UInt8
+        var dataLenght: Int = 0
+        let dataPointer = aDecoder.decodeBytes(forKey: "data", returnedLength: &dataLenght)
+        let dataBuffer = UnsafeBufferPointer(start: dataPointer, count: dataLenght)
+        self.data = [UInt8](dataBuffer)
+        
+        // TODO: Verificar melhor forma de decoding dos campos abaixo
+        let manufacturerCodePointer = aDecoder.decodeBytes(forKey: "manufacturerCode", returnedLength: &dataLenght)
+        let manufacturerCodeBuffer = UnsafeBufferPointer(start: manufacturerCodePointer, count: 1)
+        self.manufacturerCode = [UInt8](manufacturerCodeBuffer)[0]
+        
+        let numberOfBitsPointer = aDecoder.decodeBytes(forKey: "numberOfBits", returnedLength: &dataLenght)
+        let numberOfBitsBuffer = UnsafeBufferPointer(start: numberOfBitsPointer, count: 1)
+        self.numberOfBits = [UInt8](numberOfBitsBuffer)[0]
+        
         self.controlLayoutTag = aDecoder.decodeInteger(forKey: "controlLayoutTag")
     }
     

@@ -15,15 +15,16 @@ class DeviceCategoriesManager {
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: self.deviceArchiveURL.path) as? [DeviceCategory] {
             self.deviceCategories += archivedItems
         }
+        else {
+            // TODO: Migrar objetos iniciais para o AppDelegate
         
-        // TODO: Migrar objetos iniciais para o AppDelegate
+            let testCommand = DeviceCommand(data: [0xE0, 0xE0, 0x40, 0xBF], manufacturerCode: 7, numberOfBits: 32, controlLayoutTag: 1)
+            let testDevice = Device(name: "UN48000 (Sala)", commands: [testCommand])
+            let testManufacturer = Manufacturer(name: "Samsung", devices: [testDevice])
+            let newDeviceCategory = add(deviceCategory: "TV")
         
-        let testCommand = DeviceCommand(data: [0xE0, 0xE0, 0x40, 0xBF], manufacturerCode: 7, numberOfBits: 32, controlLayoutTag: 1)
-        let testDevice = Device(name: "UN48000 (Sala)", commands: [testCommand])
-        let testManufacturer = Manufacturer(name: "Samsung", devices: [testDevice])
-        let newDeviceCategory = add(deviceCategory: "TV")
-        
-        newDeviceCategory.manufacturers.append(testManufacturer)
+            newDeviceCategory.manufacturers.append(testManufacturer)
+        }
     }
     
     func add(deviceCategory name: String) -> DeviceCategory {
