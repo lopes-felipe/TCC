@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Device {
+class Device: NSObject, NSCoding {
     init(name: String) {
         self.name = name
         self.commands = []
@@ -17,6 +17,16 @@ class Device {
     init(name: String, commands: [DeviceCommand]) {
         self.name = name;
         self.commands = commands;
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        self.name = aDecoder.decodeObject(forKey: "name") as! String
+        self.commands = aDecoder.decodeObject(forKey: "commands") as! [DeviceCommand]
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(commands, forKey: "commands")
     }
     
     var name: String
