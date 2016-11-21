@@ -73,7 +73,19 @@ class RemoteViewController: UIViewController {
     func didFinishRegistration(forCommand command:DeviceCommand) {
         self.selectedDevice.commands.append(command)
         
-        dismiss(animated: false, completion: nil)    }
+        dismiss(animated: false, completion: showSuccessAlert)
+    }
+    
+    func showSuccessAlert() {
+        let alert = UIAlertController(title: "Sucesso", message: "Comando cadastrado com sucesso.", preferredStyle: .alert)
+        present(alert, animated: true, completion: dismissSuccessAlert)
+    }
+    
+    func dismissSuccessAlert() {
+        sleep(2)
+        
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension RemoteViewController : BluetoothReceiverDelegate {
